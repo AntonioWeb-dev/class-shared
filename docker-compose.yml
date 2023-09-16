@@ -1,0 +1,10 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    restart: always
+    ports:
+      - 27017:27090
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: classshare
+      MONGO_INITDB_ROOT_PASSWORD: classshared
